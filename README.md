@@ -9,8 +9,8 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 
 ## Surface (ARM64)
 - Please note Qualcomm and Windows are no longer support ARM32 (which what I do)
-- Good new is the ARM64 is officially adopted [Click here](https://github.com/stenzek/duckstation/releases)
-
+- Good news is the ARM64 is officially adopted [Click here](https://github.com/stenzek/duckstation/releases)
+- My work is focus on legacy support for older devices and ARM devices that still support ARM32
 
 ## Performance
 After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
