@@ -8,9 +8,8 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 - Don't enable recompiler option still not working
 
 ## Surface (ARM64)
-As now the new Surface is in the market the demand for ARM apps will be more
-please note Qualcomm and Windows are no longer support ARM32 (which what I do)
-good new is the ARM64 is officially adopted [Click here](https://github.com/stenzek/duckstation/releases)
+- Please note Qualcomm and Windows are no longer support ARM32 (which what I do)
+- Good new is the ARM64 is officially adopted [Click here](https://github.com/stenzek/duckstation/releases)
 
 
 ## Performance
