@@ -7,6 +7,12 @@ Fast PlayStation 1 emulator for Windows ARM32 (UWP)
 - DirectX 11 Feature Level 9.1 (Partially, Software render)
 - Don't enable recompiler option still not working
 
+## Surface (ARM64)
+As now the new Surface is in the market the demand for ARM apps will be more
+please note Qualcomm and Windows are no longer support ARM32 (which what I do)
+good new is the ARM64 is officially adopted
+https://github.com/stenzek/duckstation/releases
+
 ## Performance
 After few tests it worked good on `Adreno 330` but slow on `Adreno 305`
 
