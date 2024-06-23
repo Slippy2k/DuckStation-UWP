@@ -262,7 +262,7 @@ void Settings::Load(SettingsInterface& si)
   audio_sync_enabled = si.GetBoolValue("Audio", "Sync", true);
   audio_dump_on_boot = si.GetBoolValue("Audio", "DumpOnBoot", false);
   d3d93_compatibility = si.GetBoolValue("Backend", "D3D93Comp", false);
-  safe_memory = si.GetBoolValue("Backend", "SafeMemory", false);
+  safe_memory = si.GetBoolValue("Backend", "SafeMemory", true);
   cache_shader = si.GetBoolValue("Backend", "CacheShader", true);
   d3dnotice = si.GetBoolValue("Backend", "D3D93Note", true);
   forceLandscape = si.GetBoolValue("Backend", "ForceLandscape", false);

@@ -1628,8 +1628,13 @@ void DrawSettingsWindow()
           settings_changed |= ToggleButton("Landscape Mode", "Force the app to start in landscape mode.",
                                            &s_settings_copy.forceLandscape);
 
-          settings_changed |= ToggleButton("Safe Memory", "Off if you don't have problems, might cause limitations.",
+          #if _M_ARM
+          settings_changed |= ToggleButton("Safe Memory", "Off if you have root access only.",
                                            &s_settings_copy.safe_memory);
+          #else
+          settings_changed |= ToggleButton("Safe Memory", "Keep this on.",
+                                           &s_settings_copy.safe_memory);
+          #endif
 
           settings_changed |= RangeButton("Touch Awareness", "Avoid unwanted touchs, reducing may impact scroll",
                                           &s_settings_copy.touch_sens, 0.0f, 10.0f, 0.1f, "%.2f");
