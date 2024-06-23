@@ -58,11 +58,40 @@ Checkout the official documentation ([Click here](https://github.com/stenzek/duc
 Read about features and performance tips ([Click here](https://github.com/basharast/DuckStation-UWP-ARM/wiki))
 
 
-## Note
+# Build 
 
-When the UWP release will be adopted again in the official repo, those improvements and fixes will be submitted there.
+This was hardly ported to older hardware, things aren't organized
 
-the original developer (stenzek) really done a good job with his first UWP support (before it dropped), so dont credit me for the full UWP integration
+I don't care about code quality more than the result
+
+if you are going to build this for modern hardware, use the official repo
+
+there are certain changes added for testing the performance on older hardware
+
+before you start note the following:
+
+- I'm un-aware nor I care for any issues on ARM64 or x64 (runtime or build)
+
+- This port meant for older hardware which use ARM32.
+
+- Don't post any issue related to other than ARM32
+
+- If you saw the src around 1GB it maybe because there was some compiled stuff are in sub folders and I made it quickly, and no time to safely clean those.
+
+## Steps
+
+Ensure to have:
+- SDK: 10240, 17763, 19041
+- Visual Studio 2022 ( with platform tools v143)
+- Only use ReleaseUWP (tested for ARM, ARM64 and x64)
+
+## Important
+
+Some linked projects at Dependencies require to be build manually
+
+like project `util`, I guess also `fmt`, in anycase you got that `.lib` is missing
+
+go to Dependencies and build it manually (Right click, Build)
 
 
 # Credits
